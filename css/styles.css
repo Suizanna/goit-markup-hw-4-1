@@ -47,16 +47,15 @@ p {
 }
 
 h1 {
-    letter-spacing: 0.06em;
+  letter-spacing: 0.06em;
 }
 h2,
 h3 {
-    letter-spacing: 0.03em;
-}        
-p {
-    letter-spacing: 0.03em;
+  letter-spacing: 0.03em;
 }
-
+p {
+  letter-spacing: 0.03em;
+}
 
 .link {
   text-decoration: none;
@@ -76,17 +75,17 @@ img {
 }
 /*==========*/
 .header {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 .container-main {
-    justify-content: space-between;     
-    display: flex;
-    width: 1200px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
-    background-color: var(--primary-bg-color); 
-    height: 80px;
+  justify-content: space-between;
+  display: flex;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  background-color: var(--primary-bg-color);
+  height: 80px;
 }
 
 .main-nav {
@@ -101,7 +100,7 @@ img {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
-  color: #212121; /*var(--title-text-color)*/
+  color: var(--title-text-color);
   text-decoration: none;
   margin-top: 24px;
   margin-bottom: 25px;
@@ -139,8 +138,8 @@ img {
   display: flex;
   margin-left: 93px;
   border: 1px solid transparent;
-   
- /* outline: 1px solid transparent;*/
+
+  /* outline: 1px solid transparent;*/
 }
 .site-nav .item + .item {
   margin-left: 53px;
@@ -218,7 +217,7 @@ img {
   align-items: center;
 }
 /*============Герой*====================================*/
-.container-hero { 
+.container-hero {
   /*box-sizing: border-box;*/
   max-width: 1600px;
   margin-left: auto;
@@ -230,7 +229,7 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color:  var(--third-bg-color); 
+  background-color: var(--third-bg-color);
   background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -326,7 +325,7 @@ img {
 
 /* Наши Особенности* Картинки-антена и т д ===========*/
 .list-item::before {
-  display: block;                               /*сдела по видео-уроку 20.11.*/
+  display: block; /*сдела по видео-уроку 20.11.*/
   content: "";
   width: 270px;
   height: 120px;
@@ -561,10 +560,10 @@ img {
 
 /*ФУТЕР*/
 .footer-title {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--third-bg-color);
-  }
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: var(--third-bg-color);
+}
 .footer-box {
   display: flex;
   align-items: baseline;
@@ -573,8 +572,8 @@ img {
   margin-right: 70px;
 }
 .footer-center {
-    display: block;
-    justify-content: space-between;
+  display: block;
+  justify-content: space-between;
 }
 .join {
   font-weight: 700;
@@ -606,7 +605,7 @@ img {
   height: 44px;
   border-radius: 50px;
   background: rgba(255, 255, 255, 0.1);
- /* margin-bottom: 100px;*/
+  /* margin-bottom: 100px;*/
 }
 .social-list-item {
   margin-right: 10px;
@@ -680,7 +679,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
- 
+
   text-align: center;
   align-items: center;
   display: block;
@@ -701,7 +700,7 @@ img {
 }
 .button-nav:hover,
 .button-nav:active {
-  color: var(--primary-bg-color);    /*#ffffff*/
+  color: var(--primary-bg-color); /*#ffffff*/
   background-color: var(--accent-color); /*#2196F3;*/
 }
 
@@ -721,8 +720,8 @@ img {
 }
 .container-img .carts {
   border: 1px solid #eeeeee;
- /*border-top: none;*/
-} 
+  /*border-top: none;*/
+}
 
 .border {
   border: 1px solid #eeeeee;
