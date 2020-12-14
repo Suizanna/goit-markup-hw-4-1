@@ -849,7 +849,7 @@ img {
 }
 
 .backdrop.is-hidden {
-  transition: all 250ms linear 250ms;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .backdrop.is-hidden .modal {
@@ -862,15 +862,12 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+
+  transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
   /* transition: transform 500ms linear 500ms; */
-
-  box-sizing: border-box;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
   width: 528px;
   min-height: 581px;
   background-color: #ffffff;
