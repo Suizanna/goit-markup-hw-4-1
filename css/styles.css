@@ -1,13 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
 :root {
   --primary-text-color: #757575; /* оcновной главный*/
   --title-text-color: #212121; /*цвет заголовков*/
@@ -133,6 +123,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .site-nav {
   display: flex;
@@ -162,11 +153,10 @@ img {
   background-color: #2196f3;
   border-radius: 2px;
 }
-.item {
-  /* margin-top: 32px;
-  margin-bottom: 32px;*/
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+/*.item {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}*/
 
 /* КОНТАКТЫ ТЕЛ ИКОНКИ*===============*/
 .contact-item-svg-envelope {
@@ -196,6 +186,7 @@ img {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-text-color); /*#757575;*/
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-nav {
   display: flex;
@@ -203,7 +194,7 @@ img {
   align-self: flex-end;
   cursor: pointer;
   /*list-style: none;*/
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
   /* transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
 }
 
@@ -261,10 +252,9 @@ img {
   margin: 0 auto; /*кнопка по центру*/
   text-align: center;
   text-decoration: none;
-
   border-radius: 4px;
-  letter-spacing: 0.06em;
 
+  letter-spacing: 0.06em;
   padding-bottom: 10px;
   padding-top: 10px;
   padding-right: 32px;
@@ -274,13 +264,12 @@ img {
   border: 1px solid transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  /* transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+  transition: color 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.hero-button .link:hover,
-.hero-button .link:focus,
-.hero-button .link:active {
-  color: var(--accent-color);
+.hero-button:hover {
+  color: var(--title-text-color);
+  transform: opasity;
 }
 
 /* Наши Особенности текст ========*/
@@ -510,13 +499,13 @@ img {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   fill: #afb1b8;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавный переход цвета при ховере*/
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .client-svg {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.client-link:hover,
-.client-link:focus {
+.client-link:hover .client-svg,
+.client-link:focus .client-svg {
   fill: var(--accent-color);
 }
 .client-link:hover {
@@ -530,10 +519,14 @@ img {
   padding-left: 32px;
   padding-bottom: 30px;
 }
+.icon-list {
+  display: flex;
+  justify-content: center;
+}
 
 .icon-list-link:hover .icon-list-svg,
 .icon-list-link:focus .icon-list-svg {
-  fill: #ffffff;
+  fill: var(--primary-bg-color);
 }
 .icon-list-link:hover,
 .icon-list-link:focus {
@@ -543,10 +536,7 @@ img {
   width: 20px;
   height: 20px;
   fill: #afb1b8;
-}
-.icon-list {
-  display: flex;
-  justify-content: center;
+  transition: fill 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .icon-list-link {
   display: flex;
@@ -556,7 +546,7 @@ img {
   height: 44px;
   border-radius: 50px;
   margin-right: 10px;
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1); /*плавный переход цвета при ховере*/
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1); /*плавный переход цвета при ховере */
 }
 .icon-list-link:nth-last-child(-n + 4) {
   margin-right: 0;
@@ -600,8 +590,9 @@ img {
 .social-list-svg {
   width: 20px;
   height: 20px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #ffffff; /*var(--primary-bg-color);*/
 }
+
 .social-list-link {
   display: flex;
   justify-content: center;
@@ -609,17 +600,17 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50px;
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   /* margin-bottom: 100px;*/
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .social-list-item {
   margin-right: 10px;
 }
-.social-list-svg {
-  fill: #ffffff; /*var(--primary-bg-color);*/
-}
-.social-list-link:hover {
+
+.social-list-link:hover,
+.social-list-link:focus,
+.social-list-link:active {
   background-color: var(--accent-color);
 }
 /*================*/
@@ -648,7 +639,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
   margin-bottom: 9px;
-  color: #ffffff;
+  color: var(--primary-bg-color);
 }
 .footer-nav {
   font-family: Roboto;
@@ -703,7 +694,7 @@ img {
   background-color: var(--second-bg-color); /*#F5F4FA;*/
   border: 1px solid #f5f4fa;
   border-radius: 4px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color, color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-nav:hover,
@@ -861,15 +852,12 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  box-sizing: border-box;
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-
-  /* transition: transform 500ms linear 500ms; */
   width: 528px;
   min-height: 581px;
   background-color: #ffffff;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+  /* transition: transform 500ms linear 500ms; */
   /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);*/
   border-radius: 4px;
