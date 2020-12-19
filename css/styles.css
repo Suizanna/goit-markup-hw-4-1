@@ -847,7 +847,7 @@ img {
 
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scale(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 
   /* transition: transform 500ms linear 0ms; */
 }
@@ -864,6 +864,7 @@ img {
   /*box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);*/
   border-radius: 4px;
+  padding: 40px;
 }
 
 .modal-close-btn {
@@ -883,7 +884,7 @@ img {
   pointer-events: none;
 }
 
-/*.user-data {
+.user-data {
   font-family: Roboto;
   font-style: 400;
   font-weight: 700;
@@ -898,24 +899,24 @@ img {
 .modal-form {
   display: flex;
   flex-direction: column;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .modal-form-input-wrapper {
   position: relative;
   margin-bottom: 28px;
-
-                              /* margin-top: 4px;  /* display: flex;
-                                justify-content: center;*/
-/*}
+  /* margin-top: 4px; */
+  /* display: block;
+  justify-content: center;*/
+}
 .modal-form-icon {
   position: absolute;
   left: 12px;
   top: 50%;
   transform: translateY(-50%);
   display: block;
-  width: 12px;
-  height: 12px;
+  width: 18px;
+  height: 18px;
   fill: #212121;
   background-repeat: no-repeat;
   background-position: center;
@@ -944,7 +945,7 @@ img {
 }
 
 .modal-form-input:focus + .modal-form-icon {
-  fill: #2196f3;
+  fill: var(--accent-color);
 }
 .modal-form-message {
   width: 100%;
@@ -955,8 +956,8 @@ img {
   padding: 12px 16px;
   box-sizing: border-box;
   margin-top: 4px;
-                                  /* margin-bottom: 20px;*/
-/*}
+  /* margin-bottom: 20px;*/
+}
 .modal-form-message::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
@@ -970,7 +971,7 @@ img {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  
+
   display: inline-block;
   justify-content: space-between;
   margin: 0 auto;
@@ -1016,11 +1017,10 @@ img {
   margin-right: 10px;
 }
 .modal-form-policy:checked + .contact-form-policy-label::before {
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   border: none;
   background-image: url(../img/check.png);
 }
-*/
 
 /*========================*/
 /* ПОРТФОЛИО 2-я стр  =========*/
