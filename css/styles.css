@@ -65,6 +65,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
+  /* outline: 1px solid red; */
 }
 /*==========*/
 .header {
@@ -294,8 +295,6 @@ img {
   display: flex;
   justify-content: space-between;
   /* margin: 0 auto;*/
-  margin-right: 30px;
-  /*margin-left: 30px; */
   /* list-style: none;*/
 }
 .features-title {
@@ -329,7 +328,7 @@ img {
   background-repeat: no-repeat;
   background-size: 65px 70px;
   background-position: center;
-  margin-right: 30px;
+  /* margin-right: 30px; */
   border-radius: 4px;
 }
 .list-item-Antena .feature-item-logo::before {
@@ -391,9 +390,9 @@ img {
   display: flex;
   justify-content: space-between;
 }
-.work-flex + .item + .item {
+/*.work-flex + .item + .item {
   margin-left: 30px;
-}
+}*/
 .work-flex .work-item {
   position: relative;
 }
